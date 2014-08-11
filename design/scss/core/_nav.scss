@@ -1,40 +1,73 @@
+.header-container {
+    background: rgba(255,255,255,.95);
+    width: 100%;
+    position: fixed;
+
+    @media only screen and (min-width: $break-medium) {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+}
+
+.nav-wrapper {
+    margin: 0 20px;
+}
+
+.title {
+    color: $light-green;
+    margin-top:25px;
+
+    @media only screen and (min-width: $break-medium) {
+        float: left;
+    }
+
+    .big {
+        color: $dark-green;
+        text-transform: uppercase;
+    }
+}
+
 nav {
+    float: center;
 
 	ul {
     	margin: 0;
     	padding: 0;
 	}
 
+    ul li {
+        display: inline;
+        width: 100%;
+    }
+
 	a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+        display: block;
+        margin-bottom: 10px;
+        padding: 15px 0;
 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+        color: #333;
 
     	&:hover,
     	&:visited {
-		    color: white;
-		    text-decoration: underline;
+		    background-color: #F0F0F0;
     	}
 	}
 
     @media only screen and (min-width: $break-small) {
+        float: right;
+        width: 400px;
+
         a {
             float: left;
-            width: 27%;
             margin: 0 1.7%;
             padding: 25px 2%;
             margin-bottom: 0;
-        }
-
-        ul li {
-            display: inline;
         }
 
         li {
@@ -49,8 +82,7 @@ nav {
     }
 
     @media only screen and (min-width: $break-medium) {
-        float: right;
-        width: 38%;
+
     }
 }
 

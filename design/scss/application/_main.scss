@@ -1,5 +1,17 @@
-.header-container {
-    border-bottom: 20px solid $dark-orange;
+body {
+	background-image: url('../img/empty_road.png');
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.main-container {
+	padding-top: 150px;
+
+	@media only screen and (min-width: $break-medium) {
+		padding-top: 100px;
+	}
 }
 
 .main {
@@ -11,7 +23,7 @@
 	}
 
 	aside {
-	    color: white;
+        color: #333;
 	    padding: 0px 5% 10px;
 	}
 
@@ -36,30 +48,16 @@
 	}
 }
 
-.header-container,
 .main aside {
-	@media only screen and (min-width: $break-medium) {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-	}
+	
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid $dark-orange;
+    border-top: 20px solid $light-green;
 }
 
-.header-container,
 .footer-container,
 .main aside {
-    background: $light-orange;
-}
-
-.title {
-    color: white;
-
-	@media only screen and (min-width: $break-medium) {
-        float: left;
-    }
+    background: rgba(255,255,255,.95);
 }
