@@ -94,14 +94,14 @@ nav {
   nav a {
     display: block;
     margin-bottom: 10px;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     color: #333; }
     nav a:hover, nav a:visited {
-      background-color: #F0F0F0; }
+      background-color: 5px solid rgba(105, 155, 111, 0.5); }
   @media only screen and (min-width: 480px) {
     nav {
       float: right;
@@ -109,8 +109,11 @@ nav {
       nav a {
         float: left;
         margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0; }
+        padding: 25px 2% 15px 2%;
+        margin-bottom: 0;
+        border-bottom: 5px solid transparent; }
+        nav a:hover, nav a:visited {
+          border-bottom: 5px solid rgba(105, 155, 111, 0.5); }
       nav li:first-child a {
         margin-left: 0; }
       nav li:last-child a {
