@@ -1,7 +1,10 @@
 .header-container {
     background: rgba(255,255,255,.95);
     width: 100%;
-    position: fixed;
+
+    @media only screen and (min-width: $break-small) {
+        position: fixed;
+    }
 
     @media only screen and (min-width: $break-medium) {
         -webkit-box-shadow: 0 5px 10px #aaa;
