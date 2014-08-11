@@ -1,9 +1,5 @@
 body {
-	background-image: url('../img/empty_road.png');
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-color: $dark-green;
 }
 
 .main-container {

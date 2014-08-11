@@ -125,11 +125,7 @@ nav {
     margin: 0 0.7%; } }
 
 body {
-  background-image: url('../img/empty_road.png');
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-color: #699b6f; }
 
 @media only screen and (min-width: 480px) {
   .main-container {
