@@ -64,6 +64,12 @@ textarea {
 
 body {
     font: 16px/26px 'Lato', sans-serif, Arial;
+    background-color: $dark-green;
+    
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .wrapper {

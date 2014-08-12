@@ -48,7 +48,12 @@ textarea {
   padding-top: 20px; }
 
 body {
-  font: 16px/26px 'Lato', sans-serif, Arial; }
+  font: 16px/26px 'Lato', sans-serif, Arial;
+  background-color: #699b6f;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
 
 .wrapper {
   width: 90%;
@@ -123,9 +128,6 @@ nav {
 @media only screen and (min-width: 480px) {
   .oldie nav a {
     margin: 0 0.7%; } }
-
-body {
-  background-color: #699b6f; }
 
 @media only screen and (min-width: 480px) {
   .main-container {

@@ -7,15 +7,10 @@ $.fn.preload = function(f) {
 }
 
 $(document).ready(function(){
-	var filesource = '../img/empty_road.jpg';
+	var filesource = 'img/empty_road.jpg';
 	$([filesource]).preload(function() {
 		console.log('using image...');
-		$('body').css({
-			'background-image': 'url("' + filesource + '"")',
-			'background-position': 'center center',
-			'background-size': 'cover',
-			'background-attachment': 'fixed',
-			'background-repeat': 'no-repeat'
-		});
+		$('body').css('background-image', 'url('+filesource+')');
+		console.log($('body').css('background'));
 	})
 });
