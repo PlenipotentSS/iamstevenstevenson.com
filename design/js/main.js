@@ -7,10 +7,11 @@ $.fn.preload = function(f) {
 }
 
 $(document).ready(function(){
-	$(['../img/empty_road.png']).preload(function() {
+	var filesource = '../img/empty_road.jpg';
+	$([filesource]).preload(function() {
 		console.log('using image...');
 		$('body').css({
-			'background-image': 'url("../img/empty_road.png")',
+			'background-image': 'url("' + filesource + '"")',
 			'background-position': 'center center',
 			'background-size': 'cover',
 			'background-attachment': 'fixed',
