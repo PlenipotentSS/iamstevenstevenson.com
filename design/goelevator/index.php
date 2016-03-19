@@ -1,3 +1,5 @@
+<?php header('Content-type: image/svg+xml'); %>
+<?php echo '<?xml version="1.0" encoding="iso-8859-1"?>';?>
 <?php
 
   function check_alive($url, $timeout = 10) {
