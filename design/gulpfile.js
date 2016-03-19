@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     clean = require('gulp-clean'),
     notify = require('gulp-notify'),
     autoprefixer = require('gulp-autoprefixer'),
-    sass = require('gulp-sass'),
     livereload = require('gulp-livereload'),
     lr = require('tiny-lr'),
     server = lr();
