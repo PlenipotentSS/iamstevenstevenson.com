@@ -36,8 +36,8 @@
     ?>
 <svg height="20" width="198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="smooth" x2="0" y2="100%"></linearGradient><stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop><stop offset="1" stop-opacity=".1"></stop><mask id="round"><rect fill="#fff" height="20" rx="3" width="198"></rect></mask><g mask="url(#round)"><rect fill="#555" height="20" width="108"></rect><rect fill="#4c1" height="20" width="90" x="108"></rect><rect fill="url(#smooth)" height="20" width="198"></rect></g><g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" text-anchor="middle"><text fill="#010101" fill-opacity=".3" x="54" y="15">current commit</text><text x="54" y="14">current commit</text><text fill="#010101" fill-opacity=".3" x="152" y="15"><?php echo $commit ?></text><text x="152" y="14"><?php echo $commit ?></text></g></svg>
     <?php
-  } else if (array_key_exists("ip",$params)) {
-    $ip = $params["ip"];
+  } else if (array_key_exists("app_ip",$params)) {
+    $ip = $params["app_ip"];
     ?>
 <svg height="20" width="198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="smooth" x2="0" y2="100%"></linearGradient><stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop><stop offset="1" stop-opacity=".1"></stop><mask id="round"><rect fill="#fff" height="20" rx="3" width="198"></rect></mask><g mask="url(#round)"><rect fill="#555" height="20" width="108"></rect><rect fill="#4c1" height="20" width="90" x="108"></rect><rect fill="url(#smooth)" height="20" width="198"></rect></g><g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" text-anchor="middle"><text fill="#010101" fill-opacity=".3" x="54" y="15">app ip</text><text x="54" y="14">current commit</text><text fill="#010101" fill-opacity=".3" x="152" y="15"><?php echo $ip ?></text><text x="152" y="14"><?php echo $ip ?></text></g></svg>
     <?php
