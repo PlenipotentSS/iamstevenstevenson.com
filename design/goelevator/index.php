@@ -1,6 +1,6 @@
-<?php header('Content-type: image/svg+xml'); %>
-<?php echo '<?xml version="1.0" encoding="iso-8859-1"?>';?>
-<?php
+<?php 
+  header("Content-type: image/svg+xml");
+  print('<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>');
 
   function check_alive($url, $timeout = 10) {
     $ch = curl_init($url);
